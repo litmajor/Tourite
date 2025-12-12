@@ -1,7 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, Users, Shield, Zap } from "lucide-react";
-import pradoImage from "@assets/generated_images/safari_tour_guide_with_jeep.png";
+import pradoImage from "@assets/WhatsApp_Image_2025-12-12_at_20.54.09_(1)_1765562544348.jpeg";
 
 export default function Fleet() {
   const vehicles = [
