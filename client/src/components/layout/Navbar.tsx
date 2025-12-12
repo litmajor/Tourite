@@ -20,7 +20,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "Tour Packages", href: "/tours" },
-    { name: "Destinations", href: "/destinations" }, // Optional
+    { name: "Fleet", href: "/fleet" },
     { name: "Contact", href: "/contact" },
   ];
 

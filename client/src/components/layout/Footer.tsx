@@ -29,8 +29,8 @@ export default function Footer() {
               <li><Link href="/"><a className="hover:text-secondary transition-colors">Home</a></Link></li>
               <li><Link href="/about"><a className="hover:text-secondary transition-colors">About Us</a></Link></li>
               <li><Link href="/tours"><a className="hover:text-secondary transition-colors">Tour Packages</a></Link></li>
-              <li><Link href="/gallery"><a className="hover:text-secondary transition-colors">Gallery</a></Link></li>
-              <li><Link href="/blog"><a className="hover:text-secondary transition-colors">Travel Blog</a></Link></li>
+              <li><Link href="/fleet"><a className="hover:text-secondary transition-colors">Our Fleet</a></Link></li>
+              <li><Link href="/contact"><a className="hover:text-secondary transition-colors">Contact</a></Link></li>
             </ul>
           </div>
 

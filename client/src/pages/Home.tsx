@@ -194,15 +194,51 @@ export default function Home() {
         </div>
       </section>
       
+      {/* Fleet Showcase */}
+      <section className="py-24 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Premium Fleet</span>
+              <h2 className="text-4xl font-serif font-bold text-primary mb-6">Travel in Comfort & Style</h2>
+              <p className="text-muted-foreground text-lg mb-6 leading-relaxed">
+                Our modern fleet of well-maintained vehicles ensures you travel in comfort, safety, and style. From intimate group safaris to large expeditions, we have the perfect transportation for your journey.
+              </p>
+              <ul className="space-y-4 mb-8">
+                {["Toyota Prado SUVs for Premium Tours", "Spacious Hiace Vans for Groups", "Land Cruiser Luxury Options", "Professional Drivers & Support"].map(item => (
+                  <li key={item} className="flex items-center gap-3">
+                    <CheckCircle2 size={20} className="text-secondary" />
+                    <span className="font-medium">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Link href="/fleet">
+                <Button className="bg-primary hover:bg-primary/90 text-white px-8 h-12 rounded-full">
+                  View Our Fleet
+                </Button>
+              </Link>
+            </div>
+            <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={heroImage} 
+                alt="Fleet Vehicle" 
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
-      <section className="py-20 bg-secondary/10">
+      <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-serif font-bold text-primary mb-6">Ready to Start Your Adventure?</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
+          <h2 className="text-4xl font-serif font-bold mb-6">Ready to Start Your Adventure?</h2>
+          <p className="text-lg opacity-90 max-w-2xl mx-auto mb-8">
             Contact our travel experts today to begin planning your dream safari itinerary tailored specifically to your preferences.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 h-14 rounded-full text-lg shadow-lg">
+            <Button size="lg" className="bg-white text-primary hover:bg-gray-100 px-8 h-14 rounded-full text-lg shadow-lg font-bold">
               Get a Free Quote
             </Button>
           </Link>

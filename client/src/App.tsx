@@ -10,6 +10,7 @@ import TourDetails from "@/pages/TourDetails";
 import Booking from "@/pages/Booking";
 import Contact from "@/pages/Contact";
 import About from "@/pages/About";
+import Fleet from "@/pages/Fleet";
 
 function Router() {
   return (
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/tours" component={Tours} />
       <Route path="/tours/:id" component={TourDetails} />
       <Route path="/booking" component={Booking} />
+      <Route path="/fleet" component={Fleet} />
       <Route path="/contact" component={Contact} />
       {/* Optional: Add Destination/Gallery routes if needed later */}
       <Route component={NotFound} />
