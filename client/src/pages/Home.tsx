@@ -30,7 +30,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl font-serif font-bold mb-6 tracking-tight drop-shadow-lg"
           >
-            Discover the <span className="text-secondary italic">Soul</span> of Africa
+            Escape to Your <span className="text-secondary italic">Paradise</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -64,8 +64,8 @@ export default function Home() {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Our Bestsellers</span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">Popular Adventures</h2>
+            <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Your Best Options</span>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">Featured Travel Packages</h2>
             <div className="w-24 h-1 bg-secondary mx-auto rounded-full" />
           </div>
 
@@ -126,20 +126,20 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Why Choose Us</span>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">We Craft Memories, Not Just Trips</h2>
+              <span className="text-secondary font-bold tracking-widest uppercase text-sm mb-2 block">Why Choose TOURITE</span>
+              <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">We Make Your Dreams Reality</h2>
               <p className="text-primary-foreground/80 text-lg mb-8 leading-relaxed">
-                With over 15 years of experience in East African tourism, we specialize in creating personalized itineraries that respect local cultures and environments while delivering world-class luxury and adventure.
+                TOURITE COMFORT is committed to providing unforgettable travel experiences with the best hotels, great restaurants, efficient bus access, and expertly organized expeditions. Your satisfaction is our guarantee.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {[
-                  "Expert Local Guides",
-                  "Sustainable Travel",
-                  "24/7 Support",
-                  "Tailor-made Itineraries",
-                  "Best Price Guarantee",
-                  "Luxury Accommodations"
+                  "Best Hotel Partnerships",
+                  "Great Restaurant Access",
+                  "Reliable Bus Service",
+                  "Expert Expeditions",
+                  "24/7 Customer Care",
+                  "Special Discounts Available"
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <div className="bg-secondary/20 p-2 rounded-full text-secondary">
@@ -166,8 +166,8 @@ export default function Home() {
       <section className="py-24 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-             <h2 className="text-4xl font-serif font-bold text-primary mb-4">Traveler Stories</h2>
-             <p className="text-muted-foreground max-w-2xl mx-auto">Hear from adventurers who have explored East Africa with us.</p>
+             <h2 className="text-4xl font-serif font-bold text-primary mb-4">Guest Reviews</h2>
+             <p className="text-muted-foreground max-w-2xl mx-auto">Discover what travelers love about their TOURITE COMFORT experience.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

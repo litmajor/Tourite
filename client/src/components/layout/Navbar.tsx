@@ -34,8 +34,8 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link href="/">
-          <a className="text-2xl font-serif font-bold text-primary tracking-tighter cursor-pointer">
-            Serengeti<span className="text-secondary">Soul</span>
+          <a className="text-2xl font-serif font-bold text-primary tracking-tight cursor-pointer">
+            TOURITE<span className="text-secondary block text-lg">COMFORT</span>
           </a>
         </Link>
 

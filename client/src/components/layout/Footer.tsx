@@ -10,10 +10,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <h3 className="text-2xl font-serif font-bold text-white">
-              Serengeti<span className="text-secondary">Soul</span>
+              TOURITE<br/>COMFORT
             </h3>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Crafting unforgettable African safaris and adventures since 2010. Sustainable, authentic, and luxurious travel experiences.
+              Escape to your paradise with premium safaris, beach holidays, and expeditions across East Africa. Your journey of a lifetime awaits.
             </p>
             <div className="flex gap-4">
               <a href="#" className="hover:text-secondary transition-colors"><Facebook size={20} /></a>
@@ -52,22 +52,22 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-primary-foreground/80">
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-secondary shrink-0 mt-0.5" />
-                <span>123 Safari Way, Nairobi, Kenya</span>
+                <span>P.O.Box 104161 Jamia<br/>Nairobi, Kenya</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-secondary shrink-0" />
-                <span>+254 700 123 456</span>
+                <span>+254 748 255 064</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={18} className="text-secondary shrink-0" />
-                <span>hello@serengetisoul.com</span>
+                <span>touritecomfortltd@gmail.com</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-primary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-primary-foreground/60">
-          <p>© 2025 Serengeti Soul Safaris. All rights reserved.</p>
+          <p>© 2025 TOURITE COMFORT. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white">Privacy Policy</a>
             <a href="#" className="hover:text-white">Terms of Service</a>

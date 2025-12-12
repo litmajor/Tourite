@@ -49,84 +49,84 @@
 
 /* Modern Naturalist Theme */
 :root {
-  /* Earthy Palette */
-  /* Background: Soft Warm Sand/Off-White */
-  --background: 40 20% 97%;
-  /* Foreground: Dark Charcoal/Deep Earth */
-  --foreground: 145 20% 15%;
+  /* Tropical Paradise Palette */
+  /* Background: Soft Off-White */
+  --background: 0 0% 97%;
+  /* Foreground: Deep Navy/Charcoal */
+  --foreground: 210 30% 15%;
 
-  /* Card: White with slight warmth */
+  /* Card: Pure White */
   --card: 0 0% 100%;
-  --card-foreground: 145 20% 15%;
+  --card-foreground: 210 30% 15%;
 
   /* Popover */
   --popover: 0 0% 100%;
-  --popover-foreground: 145 20% 15%;
+  --popover-foreground: 210 30% 15%;
 
-  /* Primary: Deep Safari Green */
-  --primary: 145 45% 25%;
-  --primary-foreground: 40 20% 97%;
+  /* Primary: Ocean Blue (from Tourite branding) */
+  --primary: 200 70% 35%;
+  --primary-foreground: 0 0% 98%;
 
-  /* Secondary: Savanna Gold/Ochre */
-  --secondary: 35 85% 55%;
-  --secondary-foreground: 145 45% 25%;
+  /* Secondary: Tropical Cyan/Turquoise */
+  --secondary: 185 90% 50%;
+  --secondary-foreground: 210 30% 15%;
 
-  /* Muted: Soft Grey/Beige */
-  --muted: 40 10% 90%;
-  --muted-foreground: 145 10% 40%;
+  /* Muted: Light Grey */
+  --muted: 0 0% 88%;
+  --muted-foreground: 210 10% 40%;
 
-  /* Accent: Lighter Green/Sage */
-  --accent: 145 25% 90%;
-  --accent-foreground: 145 45% 25%;
+  /* Accent: Warm Accent (complementary) */
+  --accent: 35 100% 60%;
+  --accent-foreground: 210 30% 15%;
 
   /* Destructive */
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
 
   /* Borders */
-  --border: 145 10% 85%;
-  --input: 145 10% 85%;
-  --ring: 145 45% 25%;
+  --border: 200 20% 85%;
+  --input: 200 20% 85%;
+  --ring: 200 70% 35%;
 
-  /* Charts (Nature Tones) */
-  --chart-1: 145 45% 25%; /* Green */
-  --chart-2: 35 85% 55%;  /* Gold */
-  --chart-3: 25 70% 50%;  /* Terracotta */
-  --chart-4: 190 60% 40%; /* Water Blue */
-  --chart-5: 40 20% 40%;  /* Stone */
+  /* Charts */
+  --chart-1: 200 70% 35%; /* Ocean Blue */
+  --chart-2: 185 90% 50%; /* Cyan */
+  --chart-3: 35 100% 60%; /* Warm Gold */
+  --chart-4: 145 40% 40%; /* Green */
+  --chart-5: 30 80% 55%;  /* Sunset Orange */
 
   --radius: 0.5rem;
 }
 
 .dark {
-  /* Dark Mode: Night Safari */
-  --background: 145 30% 10%;
-  --foreground: 40 20% 90%;
+  /* Dark Mode: Tropical Night */
+  --background: 210 30% 10%;
+  --foreground: 0 0% 90%;
 
-  --card: 145 30% 12%;
-  --card-foreground: 40 20% 90%;
+  --card: 210 30% 12%;
+  --card-foreground: 0 0% 90%;
 
-  --popover: 145 30% 12%;
-  --popover-foreground: 40 20% 90%;
+  --popover: 210 30% 12%;
+  --popover-foreground: 0 0% 90%;
 
-  --primary: 145 45% 40%; /* Lighter green for dark mode */
+  --primary: 200 70% 45%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 35 85% 55%;
-  --secondary-foreground: 145 30% 10%;
+  --secondary: 185 90% 55%;
+  --secondary-foreground: 210 30% 10%;
 
-  --muted: 145 20% 20%;
-  --muted-foreground: 145 10% 60%;
+  --muted: 210 20% 20%;
+  --muted-foreground: 210 10% 65%;
 
-  --accent: 145 20% 20%;
-  --accent-foreground: 40 20% 90%;
+  --accent: 35 100% 55%;
+  --accent-foreground: 0 0% 90%;
 
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 0 0% 98%;
 
-  --border: 145 20% 20%;
-  --input: 145 20% 20%;
-  --ring: 145 45% 40%;
+  --border: 200 20% 20%;
+  --input: 200 20% 20%;
+  --ring: 200 70% 45%;
 }
 
 @layer base {
