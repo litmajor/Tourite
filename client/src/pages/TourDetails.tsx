@@ -131,7 +131,7 @@ export default function TourDetails() {
                       </div>
                       <div className="text-left">
                         <div className="font-semibold text-sm">Call Us</div>
-                        <div className="text-xs text-muted-foreground">+254 700 123 456</div>
+                        <div className="text-xs text-muted-foreground">0723563012</div>
                       </div>
                     </Button>
                     <Button variant="ghost" className="justify-start gap-3 h-auto py-3">

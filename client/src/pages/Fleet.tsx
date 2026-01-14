@@ -2,6 +2,10 @@ import Layout from "@/components/layout/Layout";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle2, Users, Shield, Zap } from "lucide-react";
 import pradoImage from "@assets/WhatsApp_Image_2025-12-12_at_20.54.09_(1)_1765562544348.jpeg";
+import vehicle1 from "@assets/WhatsApp_Image_2026-01-14_at_13.54.57.jpeg";
+import vehicle2 from "@assets/WhatsApp_Image_2026-01-14_at_13.55.00.jpeg";
+import vehicle3 from "@assets/WhatsApp_Image_2026-01-14_at_13.55.01.jpeg";
+import vehicle4 from "@assets/WhatsApp_Image_2026-01-14_at_13.55.02.jpeg";
 
 export default function Fleet() {
   const vehicles = [
@@ -46,6 +50,42 @@ export default function Fleet() {
       type: "Custom Solutions",
       capacity: "All Sizes",
       features: ["Tailored Options", "Group Flexibility", "Best for Expeditions", "Combo Tours"]
+    },
+    {
+      id: 7,
+      name: "Premium Safari Vehicle",
+      type: "Luxury Explorer",
+      capacity: "6 Passengers",
+      image: vehicle1,
+      description: "Experience ultimate comfort with our premium safari vehicle. Equipped with panoramic windows, premium seating, and advanced climate control for extended safari expeditions.",
+      features: ["Panoramic Windows", "Premium Comfort Seating", "Advanced AC System", "Excellent Visibility"]
+    },
+    {
+      id: 8,
+      name: "Executive Transport",
+      type: "Corporate Vehicle",
+      capacity: "7 Passengers",
+      image: vehicle2,
+      description: "Perfect for business travelers and VIP tours. Features luxury interiors, smooth ride quality, and modern technology for professional travel experiences.",
+      features: ["Luxury Interior", "Smooth Suspension", "Modern Tech", "Professional Service"]
+    },
+    {
+      id: 9,
+      name: "Adventure Explorer",
+      type: "Off-Road Vehicle",
+      capacity: "5 Passengers",
+      image: vehicle3,
+      description: "Built for challenging terrain and exciting adventures. High ground clearance and robust construction ensure safe exploration in remote destinations.",
+      features: ["High Ground Clearance", "Rugged Build", "Off-Road Capable", "Adventure Ready"]
+    },
+    {
+      id: 10,
+      name: "Deluxe Safari Tour",
+      type: "Expedition Vehicle",
+      capacity: "8 Passengers",
+      image: vehicle4,
+      description: "Our latest addition for comprehensive safari experiences. Combines spacious seating with premium amenities for unforgettable wildlife viewing adventures.",
+      features: ["Spacious Interior", "Premium Amenities", "Wildlife Viewing Optimized", "All-Weather Capable"]
     }
   ];
 
@@ -109,12 +149,24 @@ export default function Fleet() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {vehicles.map((vehicle) => (
-              <Card key={vehicle.id} className="border-none shadow-lg hover:shadow-xl transition-all">
+              <Card key={vehicle.id} className="border-none shadow-lg hover:shadow-xl transition-all overflow-hidden">
+                {vehicle.image && (
+                  <div className="relative h-48 overflow-hidden">
+                    <img 
+                      src={vehicle.image} 
+                      alt={vehicle.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
                 <CardContent className="p-6">
                   <div className="mb-4">
                     <h3 className="text-xl font-serif font-bold text-primary mb-1">{vehicle.name}</h3>
                     <p className="text-secondary font-semibold text-sm">{vehicle.type}</p>
                   </div>
+                  {vehicle.description && (
+                    <p className="text-muted-foreground text-sm mb-4">{vehicle.description}</p>
+                  )}
                   <div className="bg-muted/50 px-3 py-2 rounded text-sm font-medium text-center mb-4">
                     {vehicle.capacity}
                   </div>
