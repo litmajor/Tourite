@@ -52,7 +52,7 @@ export default function Footer() {
             <ul className="space-y-4 text-sm text-primary-foreground/80">
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-secondary shrink-0 mt-0.5" />
-                <span>P.O.Box 104161 Jamia<br/>Nairobi, Kenya</span>
+                <span>Suraj plaza 3rd<br/>Nairobi, Kenya</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={18} className="text-secondary shrink-0" />

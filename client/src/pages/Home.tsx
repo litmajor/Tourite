@@ -20,7 +20,7 @@ export default function Home() {
             alt="African Savanna" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40 bg-gradient-to-b from-black/60 via-transparent to-black/60" />
+          <div className="absolute inset-0 bg-black/40 bg-linear-to-b from-black/60 via-transparent to-black/60" />
         </div>
 
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
@@ -224,7 +224,7 @@ export default function Home() {
                 alt="Fleet Vehicle" 
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/40 to-transparent" />
             </div>
           </div>
         </div>

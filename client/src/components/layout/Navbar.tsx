@@ -19,8 +19,10 @@ export default function Navbar() {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
+    { name: "Locations", href: "/locations" },
     { name: "Tour Packages", href: "/tours" },
     { name: "Fleet", href: "/fleet" },
+    { name: "Car Hire", href: "/car-hire" },
     { name: "Contact", href: "/contact" },
   ];
 

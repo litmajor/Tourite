@@ -2,8 +2,26 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
+import fs from "fs";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { metaImagesPlugin } from "./vite-plugin-meta-images";
+
+// Custom plugin to serve cars folder
+const serveCarsFolderPlugin = () => ({
+  name: 'serve-cars-folder',
+  configureServer(server) {
+    return () => {
+      server.middlewares.use('/cars', (req, res, next) => {
+        const filePath = path.join(import.meta.dirname, 'cars', req.url);
+        if (fs.existsSync(filePath) && fs.statSync(filePath).isFile()) {
+          res.end(fs.readFileSync(filePath));
+        } else {
+          next();
+        }
+      });
+    };
+  },
+});
 
 export default defineConfig({
   plugins: [
@@ -11,6 +29,7 @@ export default defineConfig({
     runtimeErrorOverlay(),
     tailwindcss(),
     metaImagesPlugin(),
+    serveCarsFolderPlugin(),
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
@@ -44,7 +63,8 @@ export default defineConfig({
     host: "0.0.0.0",
     allowedHosts: true,
     fs: {
-      strict: true,
+      strict: false,
+      allow: [path.resolve(import.meta.dirname, "cars")],
       deny: ["**/.*"],
     },
   },
